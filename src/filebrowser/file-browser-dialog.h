@@ -66,6 +66,7 @@ private slots:
 
     void onGetDirentRename(const SeafDirent& dirent, QString new_name = QString());
     void onGetDirentRemove(const SeafDirent& dirent);
+    void onGetDirentRemove(const QList<const SeafDirent*> &dirents);
     void onGetDirentShare(const SeafDirent& dirent);
     void onGetDirentUpdate(const SeafDirent& dirent);
     void onCancelDownload(const SeafDirent& dirent);

@@ -17,6 +17,7 @@
 #include "tray-icon.h"
 #include "login-dialog.h"
 #include "utils/utils.h"
+#include "shib/shib-login-dialog.h"
 
 #include "main-window.h"
 
@@ -156,6 +157,10 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_F5) {
         refreshQss();
+        return;
+    } else if (event->key() == Qt::Key_F8) {
+        ShibLoginDialog dialog(this);
+        dialog.exec();
         return;
     }
 

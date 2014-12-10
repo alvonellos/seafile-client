@@ -58,7 +58,7 @@ FileTableView::FileTableView(const ServerRepo& repo, QWidget *parent)
     setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
 
     setSelectionBehavior(QAbstractItemView::SelectRows);
-    setSelectionMode(QAbstractItemView::MultiSelection);
+    setSelectionMode(QAbstractItemView::ExtendedSelection);
 
     setMouseTracking(true);
     setAcceptDrops(true);

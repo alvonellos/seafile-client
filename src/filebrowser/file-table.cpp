@@ -128,8 +128,8 @@ void FileTableView::contextMenuEvent(QContextMenuEvent *event)
         if (row == selected[i].row())
             break;
     }
-    // if the item is
-    if (i != selected.size()) {
+    // if the item is and it is a multi-selection
+    if (i != selected.size() && selected.size() != 1) {
         item_.reset(NULL);
 
         download_action_->setVisible(true);
